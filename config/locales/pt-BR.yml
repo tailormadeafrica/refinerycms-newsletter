@@ -1,9 +1,9 @@
 pt-BR:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ pt-BR:
             no_items_yet: 'Não há %{type} comentários.'
           show:
             comment: Comentário
-            blog_post: Post
+            newsletter_post: Post
             from: Postado por
             date: Postado em
             message: Comentário
@@ -40,7 +40,7 @@ pt-BR:
             save_as_draft: Salvar como rascunho
             published_at: Data de publicação
           index:
-            no_items_yet: 'Ainda não há Posts no Blog. Clique em "%{create}" para adicionar o primeiro post.'
+            no_items_yet: 'Ainda não há Posts no Newsletter. Clique em "%{create}" para adicionar o primeiro post.'
           uncategorized:
             no_items_yet: 'Ainda não há posts sem categoria.'
           post:
@@ -50,7 +50,7 @@ pt-BR:
         settings:
           notification_recipients:
             value: Enviar notificações para
-            explanation: 'Cada vez que alguém comenta em um post no blog, é enviado um e-mail para informar que há um novo comentário.'
+            explanation: 'Cada vez que alguém comenta em um post no newsletter, é enviado um e-mail para informar que há um novo comentário.'
             hint: 'Quando um novo comentário é adicionado, será enviado uma notificação por e-mail para você.'
             example: 'Entre com o(s) seu(s) endereço(s) de email, como: jack@work.com, jill@office.com'
             updated: 'As notificações foram enviadas para "%{recipients}"'
@@ -86,7 +86,7 @@ pt-BR:
           email: Email
           message: Mensagem
           closing_line: Atenciosamente
-          ps: 'P.S. Lembre-se que você pode ver todos os comentários em "Comentários" dentro da seção "Blog".'
+          ps: 'P.S. Lembre-se que você pode ver todos os comentários em "Comentários" dentro da seção "Newsletter".'
       shared:
         categories:
           title: Categorias
@@ -114,9 +114,9 @@ pt-BR:
           thank_you: 'Obrigado por comentar.'
           thank_you_moderated: 'Obrigado por comentar. Sua mensagem foi colocada na fila de moderação e será exibida em breve.'
         index:
-          no_blog_articles_yet: Ainda não há artigos postados no blog.
+          no_newsletter_articles_yet: Ainda não há artigos postados no newsletter.
         show:
-          blog_home: Blog Home
+          newsletter_home: Newsletter Home
           comments:
             title: Comentários
             add: Fazer um comentário
@@ -124,15 +124,15 @@ pt-BR:
           filed_in: Arquivado em
           submit: Enviar comentário
         archive:
-          blog_archive_for: 'Arquivo do blog em %{date}'
-          no_blog_articles_posted: 'Não há arquivos do blog em %{date}.'
+          newsletter_archive_for: 'Arquivo do newsletter em %{date}'
+          no_newsletter_articles_posted: 'Não há arquivos do newsletter em %{date}.'
         post:
           filed_in: Arquivado em
   activerecord:
     attributes:
-      refinery/blog/post:
+      refinery/newsletter/post:
         title: Título
         body: Corpo
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: Nome
         message: Mensagem

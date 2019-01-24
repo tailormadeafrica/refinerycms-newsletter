@@ -1,10 +1,10 @@
 module Refinery
   class Categorization < ActiveRecord::Base
 
-    self.table_name = 'refinery_blog_categories_blog_posts'
-    belongs_to :blog_post, :class_name => 'Refinery::Blog::Post', :foreign_key => :blog_post_id
-    belongs_to :blog_category, :class_name => 'Refinery::Blog::Category', :foreign_key => :blog_category_id
+    self.table_name = 'refinery_newsletter_categories_newsletter_posts'
+    belongs_to :newsletter_post, :class_name => 'Refinery::Newsletter::Post', :foreign_key => :newsletter_post_id
+    belongs_to :newsletter_category, :class_name => 'Refinery::Newsletter::Category', :foreign_key => :newsletter_category_id
     
-    attr_accessible :blog_category_id, :blog_post_id
+    attr_accessible :newsletter_category_id, :newsletter_post_id
   end
 end

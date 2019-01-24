@@ -1,8 +1,8 @@
-# Refinery CMS Blog
+# Refinery CMS Newsletter
 
-Simple blog engine for [Refinery CMS](http://refinerycms.com). It supports posts, categories and comments.
+Simple newsletter engine for [Refinery CMS](http://refinerycms.com). It supports posts, categories and comments.
 
-This version of `refinerycms-blog` supports Rails 3.2.x. To use Rails 2.3.x use the [refinerycms-blog "Rails 2.3.x stable branch"](http://github.com/resolve/refinerycms-blog/tree/rails2-stable).
+This version of `refinerycms-newsletter` supports Rails 3.2.x. To use Rails 2.3.x use the [refinerycms-newsletter "Rails 2.3.x stable branch"](http://github.com/resolve/refinerycms-newsletter/tree/rails2-stable).
 
 Options:
 
@@ -18,14 +18,14 @@ Refinery CMS version 2.0.0 or above.
 Open up your ``Gemfile`` and add at the bottom this line:
 
 ```ruby
-gem 'refinerycms-blog', '~> 2.0.0'
+gem 'refinerycms-newsletter', '~> 2.0.0'
 ```
 
 Now, run ``bundle install``
 
-Next, to install the blog plugin run:
+Next, to install the newsletter plugin run:
 
-    rails generate refinery:blog
+    rails generate refinery:newsletter
 
 Run database migrations:
 
@@ -56,7 +56,7 @@ Or just with rake spec
 ## Additional Features
 * To limit rss feed length, use the 'max_results' parameter
 
-        http://test.host/blog/feed.rss?max_results=10
+        http://test.host/newsletter/feed.rss?max_results=10
 
 ## More Information
 * Check out our [Website](http://refinerycms.com/)

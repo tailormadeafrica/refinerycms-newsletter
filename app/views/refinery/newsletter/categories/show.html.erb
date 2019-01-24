@@ -1,0 +1,21 @@
+<% content_for :body_content_title, @category.title %>
+
+<% content_for :body do %>
+  <% if @posts.any? %>
+    <section id="newsletter_posts">
+      <%= render :partial => "/refinery/newsletter/shared/post", :collection => @posts %>
+      <%= will_paginate @posts %>
+    </section>
+  <% else %>
+    <p>
+      <%= t('.no_posts') %>
+    </p>
+  <% end %>
+<% end %>
+
+<% content_for :side_body do %>
+  <%= render :partial => "/refinery/newsletter/shared/categories" %>
+<% end %>
+
+<%= render :partial => "/refinery/content_page" %>
+<% content_for :stylesheets, stylesheet_link_tag('refinery/newsletter/frontend') %>

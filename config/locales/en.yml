@@ -1,9 +1,9 @@
 en:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ en:
             no_items_yet: 'There are no %{type} comments.'
           show:
             comment: Comment
-            blog_post: Blog Post
+            newsletter_post: Newsletter Post
             from: Posted by
             date: Posted at
             message: Comment
@@ -40,7 +40,7 @@ en:
             save_as_draft: Save as Draft
             published_at: Publish Date
             custom_url: Custom Url
-            custom_url_help: Generate the url for the blog post from this text instead of the title.
+            custom_url_help: Generate the url for the newsletter post from this text instead of the title.
             source_url: Source Url
             source_url_help: Stores the url for the source of the post material.
             source_url_title: Source Url Title
@@ -50,17 +50,17 @@ en:
             copy_body: Copy Post Body to Teaser
             copy_body_help: Copies the post body to the teaser.  Leave teaser blank to let Refinery automatically make the teaser.
           index:
-            no_items_yet: 'There are no Blog Posts yet. Click "%{create}" to add your first blog post.'
+            no_items_yet: 'There are no Newsletter Posts yet. Click "%{create}" to add your first newsletter post.'
           uncategorized:
-            no_items_yet: 'There are no Uncategorized Blog Posts.'
+            no_items_yet: 'There are no Uncategorized Newsletter Posts.'
           post:
-            view_live_html: 'View this blog post live <br/><em>(opens in a new window)</em>'
-            edit: Edit this blog post
-            delete: Remove this blog post forever
+            view_live_html: 'View this newsletter post live <br/><em>(opens in a new window)</em>'
+            edit: Edit this newsletter post
+            delete: Remove this newsletter post forever
         settings:
           notification_recipients:
             value: Send notifications to
-            explanation: 'Every time someone comments on a blog post, Refinery sends out an email to say there is a new comment.'
+            explanation: 'Every time someone comments on a newsletter post, Refinery sends out an email to say there is a new comment.'
             hint: 'When a new comment is added, Refinery will send an email notification to you.'
             example: "Enter your email address(es) like: jack@work.com, jill@office.com"
             updated: 'Notification recipients have been set to "%{recipients}"'
@@ -97,7 +97,7 @@ en:
           email: Email
           message: Message
           closing_line: Kind Regards
-          ps: 'P.S. All your comments are stored in the "Blog" section of Refinery under the "Comments" submenu should you ever want to view it there later.'
+          ps: 'P.S. All your comments are stored in the "Newsletter" section of Refinery under the "Comments" submenu should you ever want to view it there later.'
       shared:
         categories:
           title: Categories
@@ -127,13 +127,13 @@ en:
           thank_you: 'Thank you for commenting.'
           thank_you_moderated: 'Thank you for commenting. Your message has been placed in the moderation queue and will appear shortly.'
         index:
-          no_blog_articles_yet: There are no blog articles posted yet. Stay tuned.
+          no_newsletter_articles_yet: There are no newsletter articles posted yet. Stay tuned.
         show:
-          blog_home: Blog Home
+          newsletter_home: Newsletter Home
           comments:
             title: Comments
             add: Make a Comment
-          other: Other Blog Posts
+          other: Other Newsletter Posts
           filed_in: Filed in
           tagged: Tagged
           submit: Send comment
@@ -143,24 +143,24 @@ en:
           by: By
           source: Source
         tagged:
-          no_blog_articles_yet: There are no blog articles posted yet. Stay tuned.
+          no_newsletter_articles_yet: There are no newsletter articles posted yet. Stay tuned.
           posts_tagged: Posts tagged
         archive:
-          blog_archive_for: 'Archive for %{date}'
-          no_blog_articles_posted: 'There are no blog articles posted for %{date}. Stay tuned.'
+          newsletter_archive_for: 'Archive for %{date}'
+          no_newsletter_articles_posted: 'There are no newsletter articles posted for %{date}. Stay tuned.'
   activerecord:
     models:
-      refinery/blog/category: Category
-      refinery/blog/comment: Comment
-      refinery/blog/post: Blog post
+      refinery/newsletter/category: Category
+      refinery/newsletter/comment: Comment
+      refinery/newsletter/post: Newsletter post
     attributes:
-      refinery/blog/category:
+      refinery/newsletter/category:
         title: Title
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: Name
         email: Email
         message: Message
-      refinery/blog/post:
+      refinery/newsletter/post:
         title: Title
         body: Body
         teaser: Teaser

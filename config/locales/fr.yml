@@ -1,9 +1,9 @@
 fr:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ fr:
             no_items_yet: 'Il n''y aucun %{type} de commentaires.'
           show:
             comment: Commenter
-            blog_post: Article
+            newsletter_post: Article
             from: Écrit par
             date: Écrit le
             message: Commentaire
@@ -79,14 +79,14 @@ fr:
       comment_mailer:
         notification:
           greeting: Bonjour
-          you_recieved_new_comment: Il y a un nouveau commentaire sur le blog.
+          you_recieved_new_comment: Il y a un nouveau commentaire sur le newsletter.
           comment_starts: --- comment starts ---
           comment_ends: --- comment ends ---
           from: De
           email: Email
           message: Message
           closing_line: Cordialement
-          ps: P.S. Tous les commentaires sont stockés dans la section "Blog" de Refinery dans le menu "Commentaires" si vous voulez les revoir plus tard.
+          ps: P.S. Tous les commentaires sont stockés dans la section "Newsletter" de Refinery dans le menu "Commentaires" si vous voulez les revoir plus tard.
       shared:
         categories:
           title: Catégories
@@ -117,9 +117,9 @@ fr:
           thank_you: 'Merci pour votre commentaire.'
           thank_you_moderated: 'Merci pour votre commentaire. Votre message a été placé en attente de validation et apparaitra bientôt.'
         index:
-          no_blog_articles_yet: "Il n'y a aucun article pour l'instant. Restez en alerte."
+          no_newsletter_articles_yet: "Il n'y a aucun article pour l'instant. Restez en alerte."
         show:
-          blog_home: Accueil du blog
+          newsletter_home: Accueil du newsletter
           comments:
             title: Commentaires
             add: Ajouter un commentaire
@@ -132,23 +132,23 @@ fr:
           message: Message
           by: par
         tagged:
-          no_blog_articles_yet: "Il n'y a aucun article pour l'instant. Restez en alerte."
+          no_newsletter_articles_yet: "Il n'y a aucun article pour l'instant. Restez en alerte."
           posts_tagged: Articles taggés
         archive:
-          blog_archive_for: 'Archive du blog pour le %{date}'
-          no_blog_articles_posted: "Il n'y a aucun article pour la date du %{date}. Restez en alerte."
+          newsletter_archive_for: 'Archive du newsletter pour le %{date}'
+          no_newsletter_articles_posted: "Il n'y a aucun article pour la date du %{date}. Restez en alerte."
   activerecord:
     models:
-      refinery/blog/category: Categorie
-      refinery/blog/comment: Commentaire
-      refinery/blog/post: Article
+      refinery/newsletter/category: Categorie
+      refinery/newsletter/comment: Commentaire
+      refinery/newsletter/post: Article
     attributes:
-      refinery/blog/category:
+      refinery/newsletter/category:
         title: Titre
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: Nom
         email: Email
         message: Message
-      refinery/blog/post:
+      refinery/newsletter/post:
         title: Titre
         body: Corps

@@ -1,9 +1,9 @@
 nl:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ nl:
             no_items_yet: 'Er zijn geen %{type} reacties.'
           show:
             comment: Reactie
-            blog_post: Blogpost
+            newsletter_post: Newsletterpost
             from: Gepost door
             date: Gepost op
             message: Reactie
@@ -40,17 +40,17 @@ nl:
             save_as_draft: Sla op als concept
             published_at: Publicatiedatum 
           index:
-            no_items_yet: 'Er zijn momenteel geen blogposts. Klik op "%{create}" om uw eerste blogpost toe te voegen.'
+            no_items_yet: 'Er zijn momenteel geen newsletterposts. Klik op "%{create}" om uw eerste newsletterpost toe te voegen.'
           uncategorized:
-            no_items_yet: 'Er zijn geen ongecategoriseerde blogposts.'
+            no_items_yet: 'Er zijn geen ongecategoriseerde newsletterposts.'
           post:
-            view_live_html: 'Bekijk deze blogpost op de website <br/><em>(opent in een nieuw venster)</em>'
-            edit: Bewerk deze blogpost
-            delete: Verwijder deze blogpost definitief
+            view_live_html: 'Bekijk deze newsletterpost op de website <br/><em>(opent in een nieuw venster)</em>'
+            edit: Bewerk deze newsletterpost
+            delete: Verwijder deze newsletterpost definitief
         settings:
           notification_recipients:
             value: Stuur notificaties naar
-            explanation: 'Bij elke nieuwe reactie op een blogpost stuurt Refinery u een e-mail om dit te melden.'
+            explanation: 'Bij elke nieuwe reactie op een newsletterpost stuurt Refinery u een e-mail om dit te melden.'
             hint: 'Als er een reactie is toegevoegd stuurt Refinery een e-mail notificatie naar u.'
             example: "Voer uw e-mailadres(sen) in, bijvoorbeeld: jack@work.com, jill@office.com"
             updated: 'De ontvanger(s) van notificaties is/zijn gewijzigd naar "%{recipients}"'
@@ -87,7 +87,7 @@ nl:
           email: E-mail
           message: Bericht
           closing_line: Met vriendelijke groet
-          ps: 'P.S. Alle reacties worden opgeslagen in de "Blog" sectie van Refinery onder het submenu "Comments", voor als u deze reacties later wilt bekijken.'
+          ps: 'P.S. Alle reacties worden opgeslagen in de "Newsletter" sectie van Refinery onder het submenu "Comments", voor als u deze reacties later wilt bekijken.'
       shared:
         categories:
           title: Categorien
@@ -117,18 +117,18 @@ nl:
           thank_you: 'Bedankt voor uw reactie.'
           thank_you_moderated: 'Bedankt voor uw reactie. Uw reactie is in de wachtrij geplaatst en zal binnenkort verschijnen.'
         index:
-          no_blog_articles_yet: Er zijn momenteel nog geen blogposts. Neem regelmatig een kijkje.
+          no_newsletter_articles_yet: Er zijn momenteel nog geen newsletterposts. Neem regelmatig een kijkje.
         show:
-          blog_home: Blog Home
+          newsletter_home: Newsletter Home
           comments:
             title: Reacties
             add: Plaats een reactie
-          other: Andere blogposts
+          other: Andere newsletterposts
           filed_in: Toegevoegd aan
           tagged: Tagged
           submit: Verstuur reactie
         tagged:
-          no_blog_articles_yet: Er zijn momenteel nog geen blogposts. Neem regelmatig een kijkje.
+          no_newsletter_articles_yet: Er zijn momenteel nog geen newsletterposts. Neem regelmatig een kijkje.
         archive:
-          blog_archive_for: 'Blog archief voor %{date}'
-          no_blog_articles_posted: 'Er zijn geen blogposts voor %{date}. Neem regelmatig een kijkje.'
+          newsletter_archive_for: 'Newsletter archief voor %{date}'
+          no_newsletter_articles_posted: 'Er zijn geen newsletterposts voor %{date}. Neem regelmatig een kijkje.'

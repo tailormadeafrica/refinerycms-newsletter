@@ -1,9 +1,9 @@
 cs:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ cs:
             no_items_yet: 'Nejsou zde žádné %{type} komentáře.'
           show:
             comment: Komentář
-            blog_post: Blog článek
+            newsletter_post: Newsletter článek
             from: Odeslal
             date: Datum
             message: Komentář
@@ -40,7 +40,7 @@ cs:
             save_as_draft: Uložit jako koncept 
             published_at: Datum publikování
           index:
-            no_items_yet: 'Nejsou žádné články na blogu. Klikni na "%{create}" pro přidání prvního.'
+            no_items_yet: 'Nejsou žádné články na newsletteru. Klikni na "%{create}" pro přidání prvního.'
           uncategorized:
             no_items_yet: 'Nejsou žádné nekategorizované články.'
           post:
@@ -86,7 +86,7 @@ cs:
           email: Email
           message: Zpráva
           closing_line: S pozdravem
-          ps: 'P.S. Všechny komentáře jsou uloženy v sekci "Blog" pod záložkou "Komentáře" v případě pokud by je bylo třeba zobrazit později.'
+          ps: 'P.S. Všechny komentáře jsou uloženy v sekci "Newsletter" pod záložkou "Komentáře" v případě pokud by je bylo třeba zobrazit později.'
       shared:
         categories:
           title: Kategorie
@@ -114,9 +114,9 @@ cs:
           thank_you: 'Díky za komentář.'
           thank_you_moderated: 'Děkujeme za Váš komentář. Vaše zpráva čeká na schválení a objeví se v nejbližší době.'
         index:
-          no_blog_articles_yet: Právě nejsou žádné články na blogu. Zůstaňte naladěni.
+          no_newsletter_articles_yet: Právě nejsou žádné články na newsletteru. Zůstaňte naladěni.
         show:
-          blog_home: Hlavní stránka blogu
+          newsletter_home: Hlavní stránka newsletteru
           comments:
             title: Komentáře
             add: Přidat komentář
@@ -124,5 +124,5 @@ cs:
           filed_in: Podaný
           submit: Odeslat komentář
         archive:
-          blog_archive_for: 'Blog archiv pro %{date}'
-          no_blog_articles_posted: 'Nejsou žádné články publikované %{date}.'
+          newsletter_archive_for: 'Newsletter archiv pro %{date}'
+          no_newsletter_articles_posted: 'Nejsou žádné články publikované %{date}.'

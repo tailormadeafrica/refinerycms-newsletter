@@ -1,0 +1,46 @@
+<% if post.live? %>
+  <article class="newsletter_post" id="<%= dom_id(post) %>">
+    <header>
+      <h1><%= link_to post.title, refinery.newsletter_post_path(post) %></h1>
+      <section class='details'>
+        <time datetime="<%=l post.published_at.to_date, :format => :default %>" class='posted_at'>
+          <%= t('created_at', :scope => 'refinery.newsletter.shared.posts', :when => l(post.published_at.to_date, :format => :short)) %>
+        </time>
+        <%= "#{t('by', :scope => 'refinery.newsletter.posts.show')} #{post.author.username}" if post.author.present? %>.
+        <% if (categories = post.categories).any? %>
+          <aside class='filed_in'>
+            <%= t('filed_in', :scope => 'refinery.newsletter.posts.show') %>
+            <%=raw categories.collect { |category| link_to category.title, refinery.newsletter_category_path(category) }.to_sentence %>
+          </aside>
+        <% end %>
+        <% if (tags = post.tags).any? %>
+          <aside class='tagged'>
+            <%= t('tagged', :scope => 'refinery.newsletter.posts.show') %>
+            <%=raw tags.collect { |tag| link_to tag, refinery.newsletter_tagged_posts_path(tag.id, tag.name.parameterize) }.to_sentence %>
+          </aside>
+        <% end %>
+      </section>
+    </header>
+    <section class='clearfix'>
+      <% if newsletter_post_teaser_enabled? %>
+        <%= newsletter_post_teaser(post) %>
+      <% else %>
+        <%= post.body.html_safe %>
+      <% end %>
+    </section>
+    <footer>
+      <p>
+        <%= link_to t('read_more', :scope => 'refinery.newsletter.shared.posts'), refinery.newsletter_post_path(post) if newsletter_post_teaser_enabled? %>
+      </p>
+      <aside class='comment_count'>
+        <% if Refinery::Newsletter::Post.comments_allowed? %>
+          <% if post.comments.any? %>
+             (<%= pluralize(post.comments.approved.count, t('singular', :scope => 'refinery.newsletter.shared.comments')) %>)
+          <% else %>
+                (<%= t('none', :scope => 'refinery.newsletter.shared.comments') %>)
+          <% end %>
+        <% end %>
+      </aside>
+    </footer>
+  </article>
+<% end %>

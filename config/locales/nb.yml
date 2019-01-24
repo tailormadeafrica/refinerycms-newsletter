@@ -1,9 +1,9 @@
 nb:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         posts:
           form:
@@ -14,11 +14,11 @@ nb:
             meta_description_title: Meta beskrivelse
             meta_description_help: Skriv en kort beskrivelse på to eller tre setninger som forteller hva denne siden inneholder.
           index:
-            no_items_yet: 'Det er ingen Blog Posts enda. Klikk på "Lag en ny Blog Posts" for å legge til din første blog posts.'
+            no_items_yet: 'Det er ingen Newsletter Posts enda. Klikk på "Lag en ny Newsletter Posts" for å legge til din første newsletter posts.'
           post:
-            view_live: 'Vis hvordan denne blog post ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>'
-            edit: Rediger denne blog post
-            delete: Fjern denne blog post permanent
+            view_live: 'Vis hvordan denne newsletter post ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>'
+            edit: Rediger denne newsletter post
+            delete: Fjern denne newsletter post permanent
         submenu:
           comments:
             new: ny
@@ -26,6 +26,6 @@ nb:
             new: Lag en ny post
           settings:
             update_notified: Oppdater hvem som blir informert
-    blog_posts:
+    newsletter_posts:
       show:
-        other: Andre Blog Posts
+        other: Andre Newsletter Posts

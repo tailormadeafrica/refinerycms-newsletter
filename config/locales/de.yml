@@ -1,9 +1,9 @@
 de:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ de:
             no_items_yet: 'Es sind keine %{type}en Kommentare vorhanden.'
           show:
             comment: Kommentar
-            blog_post: Artikel
+            newsletter_post: Artikel
             from: Verfasst von
             date: Verfasst am
             message: Kommentar
@@ -86,7 +86,7 @@ de:
           email: E-Mail
           message: Nachricht
           closing_line: Mit besten Grüßen
-          ps: 'P.S. Alle Kommentare sind im "Blog" Abschnitt von Refinery - im Untermenü "Kommentare" - gespeichert, falls Sie diese später dort lesen möchten.'
+          ps: 'P.S. Alle Kommentare sind im "Newsletter" Abschnitt von Refinery - im Untermenü "Kommentare" - gespeichert, falls Sie diese später dort lesen möchten.'
       shared:
         categories:
           title: Kategorien
@@ -116,9 +116,9 @@ de:
           thank_you: 'Danke für den Kommentar.'
           thank_you_moderated: 'Danke für den Kommentar. Die Nachricht wurde in die Warteschlange der Moderation gestellt und erscheint in Kürze.'
         index:
-          no_blog_articles_yet: Es wurden noch keine Artikel verfasst.
+          no_newsletter_articles_yet: Es wurden noch keine Artikel verfasst.
         show:
-          blog_home: Blog Startseite
+          newsletter_home: Newsletter Startseite
           comments:
             title: Kommentare
             add: Neuen Kommentar hinzufügen
@@ -126,5 +126,5 @@ de:
           filed_in: Gespeichert unter
           submit: Kommentar senden
         archive:
-          blog_archive_for: 'Blog Archiv für %{date}'
-          no_blog_articles_posted: 'Für %{date} wurden keine Artikel verfasst.'
+          newsletter_archive_for: 'Newsletter Archiv für %{date}'
+          no_newsletter_articles_posted: 'Für %{date} wurden keine Artikel verfasst.'

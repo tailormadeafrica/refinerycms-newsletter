@@ -1,0 +1,17 @@
+<% content_for :title, "#{t('.newsletter_archive_for', :date => @archive_date.strftime('%B %Y'))}" %>
+
+<% content_for :body do %>
+  <h1><%= t('.newsletter_archive_for', :date => @archive_date.strftime('%B %Y')) %></h1>
+  <% if @posts.any? %>
+    <section id="newsletter_posts">
+      <%= render :partial => "/refinery/newsletter/shared/post", :collection => @posts %>
+    </section>
+  <% else %>
+    <p><%= t('.no_newsletter_articles_posted', :date => @archive_date.strftime('%B %Y')) %></p>
+  <% end %>
+<% end %>
+
+<%= render :partial => '/refinery/newsletter/shared/body_content_right' %>
+
+<%= render :partial => "/refinery/content_page" %>
+<% content_for :stylesheets, stylesheet_link_tag('refinery/newsletter/frontend') %>

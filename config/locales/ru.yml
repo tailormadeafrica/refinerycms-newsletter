@@ -1,9 +1,9 @@
 ru:
   refinery:
     plugins:
-      refinerycms_blog:
+      refinerycms_newsletter:
         title: Блог
-    blog:
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ ru:
             no_items_yet: '%{type} комментарии: отсутствуют.'
           show:
             comment: Комментарий
-            blog_post: Запись в блоге
+            newsletter_post: Запись в блоге
             from: Опубликовал
             date: Опубликовано
             message: Комментарий
@@ -114,9 +114,9 @@ ru:
           thank_you: 'Спасибо за комментарий.'
           thank_you_moderated: 'Спасибо за комментарий. Ваше сообщение модерируется и скоро появится на сайте.'
         index:
-          no_blog_articles_yet: Пока ни одной записи не опубликовано. Следите за новостями.
+          no_newsletter_articles_yet: Пока ни одной записи не опубликовано. Следите за новостями.
         show:
-          blog_home: Вернуться к списку записей
+          newsletter_home: Вернуться к списку записей
           comments:
             title: Комментарии
             add: Написать комментарий
@@ -124,5 +124,5 @@ ru:
           filed_in: Категория
           submit: Отправить комментарий
         archive:
-          blog_archive_for: 'Архив %{date}'
-          no_blog_articles_posted: 'Ни одной записи за %{date} не опубликовано. Следите за новостями.'
+          newsletter_archive_for: 'Архив %{date}'
+          no_newsletter_articles_posted: 'Ни одной записи за %{date} не опубликовано. Следите за новостями.'

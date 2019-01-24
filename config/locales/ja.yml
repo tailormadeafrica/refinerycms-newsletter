@@ -1,9 +1,9 @@
 ja:
   refinery:
     plugins:
-      refinerycms_blog:
+      refinerycms_newsletter:
         title: ブログ
-    blog:
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ ja:
             no_items_yet: '%{type}に関するコメントがありません。'
           show:
             comment: コメント
-            blog_post: 投稿
+            newsletter_post: 投稿
             from: 投稿者
             date: 投稿時刻
             message: コメント
@@ -120,9 +120,9 @@ ja:
           thank_you: 'コメントをありがとうございます。'
           thank_you_moderated: 'コメントをありがとうございます。コメントが承認待ちとされています。承認次第公開されます。'
         index:
-          no_blog_articles_yet: ブログ記事がまだ投稿されてません。
+          no_newsletter_articles_yet: ブログ記事がまだ投稿されてません。
         show:
-          blog_home: ブログ・ホーム
+          newsletter_home: ブログ・ホーム
           comments:
             title: コメント
             add: コメントを投稿
@@ -135,24 +135,24 @@ ja:
           message: メッセージ
           by: '投稿者:'
         tagged:
-          no_blog_articles_yet: ブログ記事がまだ投稿されてません。
+          no_newsletter_articles_yet: ブログ記事がまだ投稿されてません。
           posts_tagged: 投稿タグ
         archive:
-          blog_archive_for: '%{date}搭載のブログ記事'
-          no_blog_articles_posted: '%{date}付のブログ記事が投稿されてません。'
+          newsletter_archive_for: '%{date}搭載のブログ記事'
+          no_newsletter_articles_posted: '%{date}付のブログ記事が投稿されてません。'
   activerecord:
     models:
-      refinery/blog/category: カテゴリ
-      refinery/blog/comment: コメント
-      refinery/blog/post: 投稿
+      refinery/newsletter/category: カテゴリ
+      refinery/newsletter/comment: コメント
+      refinery/newsletter/post: 投稿
     attributes:
-      refinery/blog/category:
+      refinery/newsletter/category:
         title: 題名
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: 名前
         email: メール
         message: メッセージ
-      refinery/blog/post:
+      refinery/newsletter/post:
         title: 題名
         body: 本文
         teaser: 短紹介文

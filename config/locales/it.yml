@@ -1,9 +1,9 @@
 it:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ it:
             no_items_yet: 'Non ci sono %{type} commenti.'
           show:
             comment: Commento
-            blog_post: Articolo
+            newsletter_post: Articolo
             from: Pubblicato da
             date: Pubblicato il
             message: Commento
@@ -44,7 +44,7 @@ it:
             copy_body: Copia il testo dell'articolo nel teaser
             copy_body_help: Lascia il teaser bianco per creare il teaser automaticamente.
           index:
-            no_items_yet: 'Non ci sono ancora articoli in questo Blog. Clicca su "%{create}" per aggiungerne uno.'
+            no_items_yet: 'Non ci sono ancora articoli in questo Newsletter. Clicca su "%{create}" per aggiungerne uno.'
           uncategorized:
             no_items_yet: 'Non ci sono articoli senza categoria.'
           post:
@@ -90,7 +90,7 @@ it:
           email: Email
           message: Testo
           closing_line: Saluti
-          ps: 'P.S. Tutti i commenti sono memorizzati nella sezione "Blog di Refinery sotto la voce "Commenti" se mai volessi visualizzarli lì.'
+          ps: 'P.S. Tutti i commenti sono memorizzati nella sezione "Newsletter di Refinery sotto la voce "Commenti" se mai volessi visualizzarli lì.'
       shared:
         categories:
           title: Categorie
@@ -120,7 +120,7 @@ it:
           thank_you: 'Grazie per aver scritto un commento.'
           thank_you_moderated: 'Grazie per aver scritto un commento. Il tuo messaggio è stato inserito nella coda di moderazione e sarà visibile a breve.'
         index:
-          no_blog_articles_yet: Non sono stati ancora pubblicati articoli nel blog. Continuate a seguirci.
+          no_newsletter_articles_yet: Non sono stati ancora pubblicati articoli nel newsletter. Continuate a seguirci.
         show:
           comments:
             title: Commenti
@@ -134,23 +134,23 @@ it:
           message: Articolo
           by: da
         tagged:
-          no_blog_articles_yet: Non sono stati ancora pubblicati articoli nel blog. Continuate a seguirci.
+          no_newsletter_articles_yet: Non sono stati ancora pubblicati articoli nel newsletter. Continuate a seguirci.
           posts_tagged: Articoli taggati
         archive:
-          blog_archive_for: 'Articoli pubblicati il %{date}'
-          no_blog_articles_posted: Non sono stati pubblicati articoli nel blog il %{date}. Continuate a seguirci.
+          newsletter_archive_for: 'Articoli pubblicati il %{date}'
+          no_newsletter_articles_posted: Non sono stati pubblicati articoli nel newsletter il %{date}. Continuate a seguirci.
   activerecord:
     models:
-      refinery/blog/category: Categoria
-      refinery/blog/comment: Commento
-      refinery/blog/post: Articolo
+      refinery/newsletter/category: Categoria
+      refinery/newsletter/comment: Commento
+      refinery/newsletter/post: Articolo
     attributes:
-      refinery/blog/category:
+      refinery/newsletter/category:
         title: Titolo
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: Nome
         email: Email
         message: Testo
-      refinery/blog/post:
+      refinery/newsletter/post:
         title: Titolo
         body: Testo

@@ -1,9 +1,9 @@
 zh-CN:
   refinery:
     plugins:
-      refinerycms_blog:
+      refinerycms_newsletter:
         title: 博客
-    blog:
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ zh-CN:
             no_items_yet: '没有 %{type} 评论。'
           show:
             comment: 评论
-            blog_post: 发博
+            newsletter_post: 发博
             from: 发布由
             date: 发布在
             message: 评论
@@ -86,7 +86,7 @@ zh-CN:
           email: 邮件
           message: 信息
           closing_line: 亲切问候
-          ps: 'P.S. All your comments are stored in the "Blog" section of Refinery under the "Comments" submenu should you ever want to view it later there.'
+          ps: 'P.S. All your comments are stored in the "Newsletter" section of Refinery under the "Comments" submenu should you ever want to view it later there.'
       shared:
         categories:
           title: 分类
@@ -114,9 +114,9 @@ zh-CN:
           thank_you: '感谢您的评论。'
           thank_you_moderated: '感谢您的评论。 您的信息已被列入等待审核队列，并会在短期内出现。'
         index:
-          no_blog_articles_yet: 尚未发布文章。敬请关注。
+          no_newsletter_articles_yet: 尚未发布文章。敬请关注。
         show:
-          blog_home: 博客首页
+          newsletter_home: 博客首页
           comments:
             title: 评论
             add: 发表评论
@@ -124,5 +124,5 @@ zh-CN:
           filed_in: 用户体验
           submit: 发送评论
         archive:
-          blog_archive_for: '博客存档 %{date}'
-          no_blog_articles_posted: '没有发布文章 %{date}。敬请关注。'
+          newsletter_archive_for: '博客存档 %{date}'
+          no_newsletter_articles_posted: '没有发布文章 %{date}。敬请关注。'

@@ -1,9 +1,9 @@
 pl:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blog
-    blog:
+      refinerycms_newsletter:
+        title: Newsletter
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ pl:
             no_items_yet: 'Nie ma więcej komentarzy typu "%{type}".'
           show:
             comment: Komentarz
-            blog_post: Post
+            newsletter_post: Post
             from: Autor
             date: Data
             message: Komentarz
@@ -40,9 +40,9 @@ pl:
             save_as_draft: Zapisz jako szkic
             published_at: Data publikacji
           index:
-            no_items_yet: 'Na blogu nie ma jeszcze żadnych wpisów. Kliknij "%{create}" aby dodać pierwszy post.'
+            no_items_yet: 'Na newsletteru nie ma jeszcze żadnych wpisów. Kliknij "%{create}" aby dodać pierwszy post.'
           uncategorized:
-            no_items_yet: 'Brak nieskategoryzowanych wpisów na blogu.'
+            no_items_yet: 'Brak nieskategoryzowanych wpisów na newsletteru.'
           post:
             view_live: 'Zobacz ten post na żywo<br/><em>(otwiera w nowym oknie)</em>'
             edit: Edytuj ten post
@@ -86,7 +86,7 @@ pl:
           email: Email
           message: Treść
           closing_line: Pozdrawiamy
-          ps: 'P.S. Wszystkie komentarze przechowywane są w panelu zarządzania, w sekcji "Blog" i podmenu "Komentarze". '
+          ps: 'P.S. Wszystkie komentarze przechowywane są w panelu zarządzania, w sekcji "Newsletter" i podmenu "Komentarze". '
       shared:
         categories:
           title: Kategorie
@@ -114,9 +114,9 @@ pl:
           thank_you: 'Dziękujemy za Twój komentarz.'
           thank_you_moderated: 'Dziękujemy za Twój komentarz. Został on przekazany do moderacji i niedługo pojawi się na stronie.'
         index:
-          no_blog_articles_yet: W tej chwili nie ma jeszcze żadnych postów. Cierpliwości:)
+          no_newsletter_articles_yet: W tej chwili nie ma jeszcze żadnych postów. Cierpliwości:)
         show:
-          blog_home: Blog 
+          newsletter_home: Newsletter 
           comments:
             title: Komentarze
             add: Dodaj komentarz
@@ -124,11 +124,11 @@ pl:
           filed_in: 'kategorie:'
           submit: Dodaj komentarz
         archive:
-          blog_archive_for: 'Archiwum dla %{date}'
-          no_blog_articles_posted: 'Brak wpisów dla daty %{date}.'
+          newsletter_archive_for: 'Archiwum dla %{date}'
+          no_newsletter_articles_posted: 'Brak wpisów dla daty %{date}.'
   activerecord:
     attributes:
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: "Imię"
         email: "Email"
         message: "Treść"

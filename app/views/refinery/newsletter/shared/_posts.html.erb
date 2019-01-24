@@ -1,0 +1,10 @@
+<% if @posts.many? %>
+  <h2><%= t('.other') %></h2>
+  <ul id="newsletter_posts">
+    <% @posts.each do |newsletter_post| %>
+      <li class='clearfix'>
+        <%= link_to newsletter_post.title, refinery.newsletter_post_path(newsletter_post) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

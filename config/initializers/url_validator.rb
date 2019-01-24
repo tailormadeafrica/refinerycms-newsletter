@@ -39,7 +39,7 @@ $/ix
 end
 
 # Code below written by John Nunemaker
-# See blog post at http://railstips.org/blog/archives/2009/03/04/following-redirects-with-nethttp/
+# See newsletter post at http://railstips.org/newsletter/archives/2009/03/04/following-redirects-with-nethttp/
 class RedirectFollower
   class TooManyRedirects < StandardError; end
 

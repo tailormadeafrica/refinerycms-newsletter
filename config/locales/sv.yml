@@ -1,9 +1,9 @@
 sv:
   refinery:
     plugins:
-      refinerycms_blog:
-        title: Blogg
-    blog:
+      refinerycms_newsletter:
+        title: Newsletterg
+    newsletter:
       admin:
         categories:
           category:
@@ -23,7 +23,7 @@ sv:
             no_items_yet: 'Det finns inga %{type} kommentarer.'
           show:
             comment: Kommentar
-            blog_post: Blogg post
+            newsletter_post: Newsletterg post
             from: Postat av
             date: Postat
             message: Kommentar
@@ -40,7 +40,7 @@ sv:
             save_as_draft: Spara som utkast
             published_at: Publiceringsdatum
             custom_url: Anpassad URL
-            custom_url_help: Skapa URL för bloggposten med denna text istället för ttieln
+            custom_url_help: Skapa URL för newslettergposten med denna text istället för ttieln
             source_url: Källans URL
             source_url_help: Sparar URL för postens källa
             source_url_title: Källhänvisning (titel)
@@ -55,8 +55,8 @@ sv:
             no_items_yet: 'Det finns inga okategoriserade poster.'
           post:
             view_live_html: 'Visa denna post i en webbläsare <br/><em>(öppnas i ett nytt fönster)</em>'
-            edit: Redigera denna bloggpost
-            delete: Ta bort denna bloggpost
+            edit: Redigera denna newslettergpost
+            delete: Ta bort denna newslettergpost
             draft: Utkast
         settings:
           notification_recipients:
@@ -91,14 +91,14 @@ sv:
       comment_mailer:
         notification:
           greeting: Hej!
-          you_recieved_new_comment: Du har fått en ny kommentar på bloggenYou just received a new comment on your website.
+          you_recieved_new_comment: Du har fått en ny kommentar på newslettergenYou just received a new comment on your website.
           comment_starts: --- kommentar ---
           comment_ends: --- // kommentar ---
           from: Från
           email: E-post
           message: Meddelande
           closing_line: Vänliga hälsningar
-          ps: 'P.S. Alla dina kommentarer finns lagrade i bloggsektionen av ditt CMS i undermenyn kommentarer, om du vill se dem senare.'
+          ps: 'P.S. Alla dina kommentarer finns lagrade i newslettergsektionen av ditt CMS i undermenyn kommentarer, om du vill se dem senare.'
       shared:
         categories:
           title: Kategorier
@@ -128,13 +128,13 @@ sv:
           thank_you: 'Tack för din kommentar.'
           thank_you_moderated: 'Tack för din kommentar. Ditt meddelande har placerats i modereringskön och kommer snart att bli publicerat.'
         index:
-          no_blog_articles_yet: Det finns inga bloggposter än.
+          no_newsletter_articles_yet: Det finns inga newslettergposter än.
         show:
-          blog_home: Blogg hem
+          newsletter_home: Newsletterg hem
           comments:
             title: Kommentarer
             add: Kommentera
-          other: Andra bloggposter
+          other: Andra newslettergposter
           filed_in: Kategoriserat i
           tagged: Taggar
           submit: Skicka kommentar
@@ -144,24 +144,24 @@ sv:
           by: av
           source: Källa
         tagged:
-          no_blog_articles_yet: Det finns inga bloggposter än.
+          no_newsletter_articles_yet: Det finns inga newslettergposter än.
           posts_tagged: Poster taggade med
         archive:
-          blog_archive_for: 'Arkiv för %{date}'
-          no_blog_articles_posted: 'Det finns inga artiklar för %{date}.'
+          newsletter_archive_for: 'Arkiv för %{date}'
+          no_newsletter_articles_posted: 'Det finns inga artiklar för %{date}.'
   activerecord:
     models:
-      refinery/blog/category: Kategori
-      refinery/blog/comment: Kommentarer
-      refinery/blog/post: Bloggposter
+      refinery/newsletter/category: Kategori
+      refinery/newsletter/comment: Kommentarer
+      refinery/newsletter/post: Newslettergposter
     attributes:
-      refinery/blog/category:
+      refinery/newsletter/category:
         title: Titel
-      refinery/blog/comment:
+      refinery/newsletter/comment:
         name: Namn
         email: E-post
         message: Meddelande
-      refinery/blog/post:
+      refinery/newsletter/post:
         title: Titel
         body: Innehåll
         teaser: Teaser

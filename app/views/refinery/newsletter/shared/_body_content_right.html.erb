@@ -1,0 +1,9 @@
+<% content_for :side_body do %>
+  <%= yield(:body_content_right_prepend) %>
+  <%= render :partial => "/refinery/newsletter/shared/rss_feed" %>
+  <%= render :partial => "/refinery/newsletter/shared/categories" %>
+  <%= render :partial => "/refinery/newsletter/shared/tags" %>
+  <%= render :partial => "/refinery/newsletter/shared/posts" %>
+  <%= newsletter_archive_widget %>
+  <%= yield(:body_content_right_append) %>
+<% end %>
