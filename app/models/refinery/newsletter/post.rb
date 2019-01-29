@@ -16,8 +16,8 @@ module Refinery
       has_many :comments, :dependent => :destroy, :foreign_key => :newsletter_post_id
       acts_as_taggable
 
-      has_many :categorizations, :dependent => :destroy, :foreign_key => :newsletter_post_id
-      has_many :categories, :through => :categorizations, :source => :newsletter_category
+      has_many :newsletter_categorizations, :dependent => :destroy, :foreign_key => :newsletter_post_id
+      has_many :categories, :through => :newsletter_categorizations, :source => :newsletter_category
 
       acts_as_indexed :fields => [:title, :body]
 
@@ -78,7 +78,7 @@ module Refinery
         end
 
         def uncategorized
-          live.includes(:categories).where(Refinery::Categorization.table_name => { :newsletter_category_id => nil })
+          live.includes(:categories).where(Refinery::NewsletterCategorization.table_name => { :newsletter_category_id => nil })
         end
 
         def next(current_record)

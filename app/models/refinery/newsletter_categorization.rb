@@ -1,5 +1,5 @@
 module Refinery
-  class Categorization < ActiveRecord::Base
+  class NewletterCategorization < ActiveRecord::Base
 
     self.table_name = 'refinery_newsletter_categories_newsletter_posts'
     belongs_to :newsletter_post, :class_name => 'Refinery::Newsletter::Post', :foreign_key => :newsletter_post_id

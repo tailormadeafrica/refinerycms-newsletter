@@ -30,12 +30,12 @@ class CreateNewsletterStructure < ActiveRecord::Migration
 
     add_index Refinery::Newsletter::Category.table_name, :id
 
-    create_table Refinery::Categorization.table_name, :id => true do |t|
+    create_table Refinery::NewsletterCategorization.table_name, :id => true do |t|
       t.integer :newsletter_category_id
       t.integer :newsletter_post_id
     end
 
-    add_index Refinery::Categorization.table_name, [:newsletter_category_id, :newsletter_post_id], :name => 'index_newsletter_categories_newsletter_posts_on_bc_and_bp'
+    add_index Refinery::NewsletterCategorization.table_name, [:newsletter_category_id, :newsletter_post_id], :name => 'index_newsletter_categories_newsletter_posts_on_bc_and_bp'
   end
 
   def down
@@ -46,7 +46,7 @@ class CreateNewsletterStructure < ActiveRecord::Migration
     drop_table Refinery::Newsletter::Post.table_name
     drop_table Refinery::Newsletter::Comment.table_name
     drop_table Refinery::Newsletter::Category.table_name
-    drop_table Refinery::Categorization.table_name
+    drop_table Refinery::NewsletterCategorization.table_name
   end
 
 end

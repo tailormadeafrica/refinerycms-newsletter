@@ -4,8 +4,8 @@ module Refinery
       extend FriendlyId
       friendly_id :title, :use => [:slugged]
 
-      has_many :categorizations, :dependent => :destroy, :foreign_key => :newsletter_category_id
-      has_many :posts, :through => :categorizations, :source => :newsletter_post
+      has_many :newsletter_categorizations, :dependent => :destroy, :foreign_key => :newsletter_category_id
+      has_many :posts, :through => :newsletter_categorizations, :source => :newsletter_post
 
       acts_as_indexed :fields => [:title]
 
